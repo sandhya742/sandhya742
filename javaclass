@@ -1,13 +1,210 @@
-public class printArray{
-public static void main(String args[]){
-int arr[]=new arr[4];
-arr[0]={10};
-arr[0]={20};
-arr[0]={30};
-arr[0]={40};
-for(int i=0;i<=arr.length;i++)
-{
-System.out.println(arr(i));
+##  1 write the program to print all the elements of Array?
+ 
+package training;
+
+public class Array {
+
+	public static void main(String[] args) {
+		int [] arr = new int [] {1, 2, 3, 4, 5};  
+        System.out.println("Elements of given array: ");  
+     
+        
+        for (int i = 0; i < arr.length; i++) {  
+            System.out.print(arr[i] + " ");  
+		}
+	}
+
 }
+output :
+Elements of given array :
+1 2 3 4 5
+
+
+## 2 WAP to print elements of array in reverse order
+
+package training;
+
+public class Array {
+
+	public static void main(String[] args) {
+		int [] arr = new int [] {1, 2, 3, 4, 5};  
+        System.out.println("Elements of given array: ");  
+     
+        
+        for (int i = arr.length-1;i>=0;i--) {  
+            System.out.print(arr[i] + " ");  
+		}
+	}
+
+}output:
+ Elements of given array:
+  5 4 3 2 1
+  
+ ## 3 duplicate values in the array
+ 
+ public class DuplicateElement{
+ public static void main(String [] args){
+ // Initialize array
+ int [] arr = new int [] {1, 2, 3, 4, 5,6,5,3,2,1};
+ System.out.println("DuplicateElements of given array: "); 
+ for (int i =0;i<arr.length;i++) { 
+ for (int j =0;j<arr.length;j++) { 
+ if(aar[i]==arr[j])
+            System.out.print(arr[j]);  
+ 
+ }
+ }
+ 
+ output:DuplicateElements of given arrar :
+1 2 3 5
+ 
+ 
+ ## 4 sorting of array
+ 
+ 
+ import java.util.array:
+ public classs SortArrayExample1{
+ public static void main(String [] args){
+ int [] array = new int [] {90, 23, 5, 109, 12, 22, 67, 34};  
+//invoking sort() method of the Arrays class  
+Arrays.sort(array);   
+System.out.println("Elements of array sorted in ascending order: ");  
+//prints array using the for loop  
+for (int i = 0; i < array.length; i++)   
+{       
+System.out.println(array[i]);   
+}   
+}  
+}  
+
+output: Elements of array sorted in ascending order: 
+         5
+         12
+         22
+         23
+         34
+         67
+         90
+         109
+
+ 
+ ### 5 prime number
+
+public class PrimeExample{    
+ public static void main(String args[]){    
+  int i,m=0,flag=0;      
+  int n=3;    
+  m=n/2;      
+  if(n==0||n==1){  
+   System.out.println(n+" is not prime number");      
+  }
+  else{  
+   for(i=2;i<=m;i++){      
+    if(n%i==0){      
+     System.out.println(n+" is not prime number");      
+     flag=1;      
+     break;      
+    }      
+   }      
+   if(flag==0) 
+   {
+   System.out.println(n+" is prime number"); }  
+  } 
+}    
+}   
+
+Output:n=4 is not prime number
+       n=3 is prime number
+
+ ### 6 reverse of 123456
+   
+public class ReverseNumberExample1   
+{  
+public static void main(String[] args)   
+{  
+int number = 123456, reverse = 0;  
+while(number != 0)   
+{  
+int remainder = number % 10;  
+reverse = reverse * 10 + remainder;  
+number = number/10;  
+}  
+System.out.println("The reverse of the given number is: " + reverse);  
+}  
+}  
+
+output: The reverse of the given number is 654321
+
+### 7 Total number of character in a string
+
+public class CountCharacter    
+{    
+    public static void main(String[] args) {    
+        String string = "Hi how are you";    
+        int count = 0;       
+        for(int i = 0; i < string.length(); i++) {    
+            if(string.charAt(i) != ' ')    
+                count++;    
+        }       
+        System.out.println("Total number of characters in a string: " + count);    
+    }    
 }
-}
+
+output:Total number of characters in a string 11 
+
+### 8 Binary sort
+
+class BinarySearchExample{  
+public class BinarySearchExample{  
+ public static void binarySearch(int arr[], int first, int last, int key){  
+   int mid = (first + last)/2;  
+   while( first <= last ){  
+      if ( arr[mid] < key ){  
+        first = mid + 1;     
+      }else if ( arr[mid] == key ){  
+        System.out.println("Element is found at index: " + mid);  
+        break;  
+      }else{  
+         last = mid - 1;  
+      }  
+      mid = (first + last)/2;  
+   }  
+   if ( first > last ){  
+      System.out.println("Element is not found!");  
+   }  
+ }  
+ public static void main(String args[]){  
+        int arr[] = {10,20,30,40,50};  
+        int key = 30;  
+        int last=arr.length-1;  
+        binarySearch(arr,0,last,key);     
+ }  
+}  
+
+output:Element is found at index: 2
+
+
+ 
+ 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
